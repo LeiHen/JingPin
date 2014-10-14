@@ -469,6 +469,7 @@ a:link,a:visited,a:active{
 	padding: 4px 0;
 	margin: 10px 0;
 	position: relative;
+	text-transform: capitalize;
 }
 .breadcrumb a .line{
 	width: 0;
