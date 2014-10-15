@@ -43,6 +43,7 @@ a:hover{text-decoration:none;cursor:pointer}
 .pa{position:absolute}
 .zoom{zoom:1}
 .hidden{visibility:hidden}
+.o_hidden{overflow: hidden}
 .none{display:none}
 
 .clear{clear:both}
