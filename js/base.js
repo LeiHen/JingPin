@@ -37,21 +37,21 @@ function get_previousSibling(n) {
 */
 function toTop(){   
     //首先将#back-to-top隐藏 
-    $("#back-to-top").hide();
+    // $("#backToTop").hide();
     
     //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $("#back-to-top").fadeIn(600);
-            $("#goReturn").stop().animate({bottom:80},800);     
-        } else {         
-            $("#back-to-top").fadeOut(600);
-            $("#goReturn").stop().animate({bottom:25},800);
-        }
-    });
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() > 100) {
+    //         $("#backToTop").fadeIn(600);
+    //         $("#goReturn").stop().animate({bottom:80},800);     
+    //     } else {         
+    //         $("#backToTop").fadeOut(600);
+    //         $("#goReturn").stop().animate({bottom:25},800);
+    //     }
+    // });
    
     //当点击跳转链接后，回到页面顶部位置
-    $("#back-to-top").click(function () {
+    $("#backToTop").click(function () {
         $("body,html").animate({
             scrollTop: 0
         }, 400);

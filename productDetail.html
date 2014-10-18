@@ -27,8 +27,8 @@
 		    <nav class="mian_nav">
 		        <ul class="ul">
 		            <li class="li"><a class="link" href="index.html">home<span class="line"></span></a></li>
-		            <li class="li"><a class="link" href="">About us<span class="line"></span></a></li>
-		            <li class="li"><a class="link" href="">Production Line<span class="line"></span></a></li>
+		            <li class="li"><a class="link" href="about.html">About us<span class="line"></span></a></li>
+<!--		            <li class="li"><a class="link" href="">Production Line<span class="line"></span></a></li>-->
 		            <li class="li"><a class="link" href="news.html">Company News<span class="line"></span></a></li>
 		            <li class="li"><a class="link" href="message.html">Online Message<span class="line"></span></a></li>
 		            <li class="li"><a class="link" href="product.html">Product Showcase<span class="line"></span></a></li>
@@ -57,7 +57,7 @@
                 <li class="li"><a class="circle"></a></li>
                 <li class="li"><a class="circle"></a></li>
             </ul>
-            <div class="arrow"></div>
+<!--            <div class="arrow"></div>-->
         </div>
 		<!-- banner]] -->
        
@@ -66,7 +66,7 @@
         <div class="breadcrumb">
             <a href="index.html">Home<span class="line"></span></a>
             &nbsp;&gt;<a href="product.html">Product Showcase<span class="line"></span></a>
-            &nbsp;&gt;<a href="product.html">detail<span class="line"></span></a>
+            &nbsp;&gt;<a href="productDetail.html">detail<span class="line"></span></a>
         </div>
         <!-- breadcroumd]] -->
        
@@ -112,7 +112,7 @@
         <!-- footer[[ -->
         <footer class="footer">
            <div class="wrap">
-                <a class="arrow" href="#" title="返回顶部"><span class="icon_arrows_t"></span></a>
+                <a class="arrow" id="backToTop" title="返回顶部"><span class="icon_arrows_t"></span></a>
                 <p>Browse by:Manufacturers - Wholesalers - China Gold Suppliers - All Products - Countries - Importers - Buying Leads - China - India - UK - Australia</p>
                 <ul class="other_link">
                     <li>
@@ -197,6 +197,12 @@
         </footer>
 		<!-- footer]] -->
  
+        <!-- qr[[ -->
+        <a class="qr">
+            <img src="images/QR.png" alt="" class="img">
+            <span class="icon_qr"></span>
+        </a>
+		<!-- qr]] -->
        
         <!-- header[[ -->
 
@@ -210,7 +216,8 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                //返回顶部
+                toTop();
 			}
 			init();
 		</script>

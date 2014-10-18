@@ -27,8 +27,8 @@
 		    <nav class="mian_nav">
 		        <ul class="ul">
 		            <li class="li"><a class="link" href="index.html">home<span class="line"></span></a></li>
-		            <li class="li"><a class="link" href="">About us<span class="line"></span></a></li>
-		            <li class="li"><a class="link" href="">Production Line<span class="line"></span></a></li>
+		            <li class="li"><a class="link" href="about.html">About us<span class="line"></span></a></li>
+<!--		            <li class="li"><a class="link" href="">Production Line<span class="line"></span></a></li>-->
 		            <li class="li"><a class="link" href="news.html">Company News<span class="line"></span></a></li>
 		            <li class="li"><a class="link" href="message.html">Online Message<span class="line"></span></a></li>
 		            <li class="li"><a class="link" href="product.html">Product Showcase<span class="line"></span></a></li>
@@ -57,27 +57,36 @@
                 <li class="li"><a class="circle"></a></li>
                 <li class="li"><a class="circle"></a></li>
             </ul>
-            <div class="arrow"></div>
+<!--            <div class="arrow"></div>-->
         </div>
 		<!-- banner]] -->
        
-       <div class="mian_content mob_title mob_title_detail">
+       <div class="mian_content mob_title mob_title_detail contactus">
        
         <div class="breadcrumb">
             <a href="index.html">Home<span class="line"></span></a>
             &nbsp;&gt;<a href="contactus.htnl">Contact Us<span class="line"></span></a>
         </div>
         
-        <!-- news[[ -->
+        <!-- Contact Us[[ -->
         <h1 class="title">Contact Us</h1>
 <!--
         <time class="time"></time>
         <h2 class="sub_title"><span></span></h2>
 -->
+<!--
         <div class="txt">
             <p>Guangzhou JingPin Garment Accessory Co.Ltd was established in the year of 2000,which is a professional manufacture of hotfix rhinestone and motifs  .  we are mainly engaged in theproductionof all rhinestone& motifs material ,such as Austrian ,preciosa stones,jpstrass stone,motifs pattern stone ,nail art non hotfix stones ,hot fix rhinestuds ,convex studs& nailheads  ,cupchain rhinestones ,plastic chain trimming etc .Top high-level quality assurance in everyThrough more than 15 years of market expanding ,now JPSTRASS brand has widely sold to South Asia ,NorthAmerica,European Countries .South America ,Africa etc .High quality products and excellent servicemake us won a good reputation among all customers .We will continuetoinventnewly production lines to provide more accurate & comfortable service . </p>
         </div>
-        <!-- news]] -->
+-->
+        
+        <div class="map" id="dituContent"></div>
+        <ul class="contact_info">
+<!--            li>span-->
+        </ul>
+        
+        
+        <!-- Contact Us]] -->
        </div>
        
         
@@ -88,7 +97,7 @@
         <!-- footer[[ -->
         <footer class="footer">
            <div class="wrap">
-                <a class="arrow" href="#" title="返回顶部"><span class="icon_arrows_t"></span></a>
+                <a class="arrow" id="backToTop" title="返回顶部"><span class="icon_arrows_t"></span></a>
                 <p>Browse by:Manufacturers - Wholesalers - China Gold Suppliers - All Products - Countries - Importers - Buying Leads - China - India - UK - Australia</p>
                 <ul class="other_link">
                     <li>
@@ -173,11 +182,19 @@
         </footer>
 		<!-- footer]] -->
  
+        <!-- qr[[ -->
+        <a class="qr">
+            <img src="images/QR.png" alt="" class="img">
+            <span class="icon_qr"></span>
+        </a>
+		<!-- qr]] -->
        
         <!-- header[[ -->
 
 		<!-- header]] -->
        
+       <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
        
         <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/base.js"></script>
@@ -186,7 +203,11 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                //返回顶部
+                toTop();
+                
+                //创建和初始化地图
+                initMap();
 			}
 			init();
 		</script>
