@@ -63,6 +63,7 @@
 	+display: inline;
 	+zoom:1;
 	margin: 10px 0;
+	
 }
 
 .index_block_02 .wrap{
@@ -74,7 +75,8 @@
 }
 
 .index_block_02 .roll_banner{
-
+	width: 1100px;
+	margin: 0 auto;
 }
 .index_block_02 .roll_banner li{
 	/*display: inline-block;
@@ -97,11 +99,45 @@
 	text-transform: capitalize;
 }
 
-.index_block_02 .roll_banner .btn_l,
-.index_block_02 .roll_banner .btn_r{
-	width: 20px;
+.index_block_02 .wrap .btn_l,
+.index_block_02 .wrap .btn_r{
+	width: 50px;
+	height: 126px;
 	position: absolute;
+	display: block;
+	font-size: 3em;
+	line-height: 126px;
+	color: #e4e4e4;
 }
+.index_block_02 .wrap .btn_l{
+	left: 0;
+}
+.index_block_02 .wrap .btn_r{
+	right: 0;
+}
+.index_block_02 .wrap .btn_l:hover,
+.index_block_02 .wrap .btn_r:hover{
+	color: #777;
+	
+}
+
+.index_block_02 .wrap .btn_l:active{
+	left: -2px;
+}
+.index_block_02 .wrap .btn_r:active{
+	right: -2px;
+}
+
+
+.news .wrap .list .link:hover .sub_title,
+.news .wrap .list .link:hover .more{
+	color: #8b771f;
+	
+}
+
+
+
+
 
 .index_block_03{
 
@@ -153,7 +189,6 @@
 }
 .index_block_03 .ul .list a:hover .line{
 	width: 100%;
-
 }
 
 
@@ -615,6 +650,10 @@
 
 .footer_banner,
 .index_block_01 .wrap .img,
+.index_block_02 .wrap .btn_l,
+.index_block_02 .wrap .btn_r,
+.index_block_02 .wrap .btn_l span,
+.index_block_02 .wrap .btn_r span,
 .index_block_03 .ul,
 .index_block_03 .ul .list,
 .index_block_03 .ul .list a,
