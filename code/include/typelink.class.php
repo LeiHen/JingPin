@@ -141,7 +141,8 @@ class TypeLink
                     $this->LogicGetPosition($this->TypeInfos['reid'],true);
                 }
                 $this->valuePosition = $indexpage.$this->SplitSymbol.$this->valuePosition;
-                return $this->valuePosition.$this->SplitSymbol;
+                //return $this->valuePosition.$this->SplitSymbol;
+                return $this->valuePosition; 
             }
             else
             {

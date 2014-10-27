@@ -116,6 +116,7 @@ function echo_validate_image( $config = array() )
     
     //输出文字
     $lastc = '';
+    $font_file= str_replace("\\","/",$font_file);
     for($i=0;$i<$rndcodelen;$i++)
     {
         $bc = mt_rand(0, 1);

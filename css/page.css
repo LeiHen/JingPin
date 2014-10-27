@@ -45,7 +45,8 @@
 	background:url(../images/bg_block_left.jpg) no-repeat left bottom; 
 }
 .index_block_01 .fr{
-	background:url(../images/bg_block_right.jpg) no-repeat right bottom; 
+	background:url(../images/bg_block_right.jpg) no-repeat right bottom;
+
 }
 
 
@@ -63,12 +64,11 @@
 	+display: inline;
 	+zoom:1;
 	margin: 10px 0;
-	
 }
 
 .index_block_02 .wrap{
 	width: 1200px;
-	margin: 0 auto;
+	margin: 80px auto 90px auto;
 	text-align: center;
 	overflow: hidden;
 	position: relative;
@@ -84,7 +84,14 @@
 	+zoom: 1;*/
 	float: left;
 	margin: 0 0 0 25px;
+	overflow: hidden;
 }
+
+.index_block_02 .roll_banner li a{
+	
+}
+
+
 .index_block_02 .roll_banner li:first-child{
 	margin: 0;
 }
@@ -122,10 +129,10 @@
 }
 
 .index_block_02 .wrap .btn_l:active{
-	left: -2px;
+	left: -6px;
 }
 .index_block_02 .wrap .btn_r:active{
-	right: -2px;
+	right: -4px;
 }
 
 
