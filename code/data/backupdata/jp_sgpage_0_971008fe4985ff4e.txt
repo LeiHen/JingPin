@@ -1,0 +1,1 @@
+INSERT INTO `jp_sgpage` VALUES('1','首页','1','a/home.html','','{style}/home.htm','home','','1414379813','');
