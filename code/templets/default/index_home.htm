@@ -52,7 +52,7 @@
        
         <!-- block_02[[ -->
         <div class="mod_block index_block_02">
-           <h1 class="title">Product Showcase</h1>
+           <h1 class="title">{dede:type typeid="4"}[field:title/]{/dede:type}</h1>
            <ul class="sub_nav">
                 <li class="list">
                     <a href="" class="btn">
@@ -166,12 +166,14 @@
       
         <!-- block_03[[ -->
         <div class="mod_block index_block_03">
-            <h1 class="title">Company News</h1>
+            {dede:type typeid="6"}
+            <h1 class="title">[field.title/]</h1>
             <div class="wrap fl">
                 <div class="info">
-                    Guangzhou JingPin Garment Accessory Co.Ltd was established in the year of 2000,which is a professional manufacture of hotfix rhinestone and motifs    we are mainly engaged in the production of all rhinestone& motifs material ,such as Austrian ,preciosa stones,jpstrass stone,motifs pattern stone nail art non hotfix stones ,hot fix rhinestuds ,convex studs& nailheads  cup chain rhinestones ,plastic chain trimming etc Top high-level quality assurance in every production .Through more than 15 years of market expanding ,
+                    [field.content/]
                 </div>
             </div>
+            {/dede:type}
             <div class="wrap fr">
                 <ul class="ul">
                     <li class="list">

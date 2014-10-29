@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="{dede:field.keywords/}">
+<meta name="description" content="{dede:field.description/}">
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+{dede:include filename="head_init.htm"/}
+</head>
+<body>  
+<!-- header[[ -->
+{dede:include filename="header.htm"/}
+<!-- header]] -->
+   
+<!-- banner[[ -->
+{dede:include filename="banner.htm"/}
+<!-- banner]] -->
+
+
+<!-- content[[ -->
+<div class="mian_content mob_title product_detail">
+  <!-- breadcroumd[[ -->
+  <div class="breadcrumb">
+    {dede:field name='position'/}
+      <!-- <a href="index.html">Home<span class="line"></span></a>
+      &nbsp;&gt;<a href="news.html">News<span class="line"></span></a> -->
+  </div>
+  <!-- breadcroumd]] -->
+ 
+	<!-- Product[[ -->
+	<h1 class="title">{dede:field.title/}</h1>
+	<div class="content">
+	    <div class="img_wrap">
+	        <div class="wrap">
+	           <div class="o_hidden"><img src="{dede:global.cfg_templets_skin/}/images/product/img_001_01_400x400.jpg" alt="" class="img"></div>
+	        </div>
+	        <div class="wrap">
+	            <ul class="show_nav">
+	                <li class="list"><img src="{dede:global.cfg_templets_skin/}/images/product/img_001_01_400x400.jpg" alt="" class="img"></li>
+	                <li class="list"><img src="{dede:global.cfg_templets_skin/}/images/product/img_001_02_400x400.jpg" alt="" class="img"></li>
+	                <li class="list"><img src="{dede:global.cfg_templets_skin/}/images/product/img_001_03_400x400.jpg" alt="" class="img"></li>
+	                <li class="list"><img src="{dede:global.cfg_templets_skin/}/images/product/img_001_04_400x400.jpg" alt="" class="img"></li>
+	            </ul>
+	<!--                    a-->
+	        </div>
+	    </div>
+	    <div class="info_wrap">
+	        <h1 class="style">{dede:field.title/}</h1>
+	        <p class="info">{dede:field.description /}</p>
+	    </div>
+	    <div class="clear"></div>
+	    <div class="detail">
+	        {dede:field.body/}
+	    </div>
+	</div>
+	<!-- Product]] -->
+
+</div>
+<!-- content[[ -->
+
+
+
+
+{dede:include filename="footer.htm"/}
+
+<script>
+    function init_present(){
+
+    }
+    init_present();
+</script>
+</body>
+</html>

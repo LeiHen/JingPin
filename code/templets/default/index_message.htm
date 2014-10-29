@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<title>{dede:global.cfg_webname/}</title>
+{dede:include filename="head_init.htm"/}
+</head>
+<body>  
+<!-- header[[ -->
+{dede:include filename="header.htm"/}
+<!-- header]] -->
+   
+<!-- banner[[ -->
+{dede:include filename="banner.htm"/}
+<!-- banner]] -->
+
+
+<!-- content[[ -->
+<div class="mian_content mob_title message">
+  <!-- breadcroumd[[ -->
+  <div class="breadcrumb">
+    {dede:field name='position'/}
+      <!-- <a href="index.html">Home<span class="line"></span></a>
+      &nbsp;&gt;<a href="news.html">News<span class="line"></span></a> -->
+  </div>
+  <!-- breadcroumd]] -->
+ 
+	<!-- message[[ -->
+	<h1 class="title">{dede:field.title/}</h1>
+	<div class="content">
+	    <ul>
+	        <li class="list"><span class="txt">name:</span><input type="text" value=""></li>
+	        <li class="list"><span class="txt">e-mail:</span><input type="text" value=""></li>
+	        <li class="list"><span class="txt">phone:</span><input type="text" value=""></li>
+	        <li class="list"><span class="txt">message:</span><textarea class="txts" name="" id="" ></textarea></li>
+	        <li class="list pt50">
+	            <span class="txt"></span>
+	            <a class="btn" title="submit">
+	                <input type="submit" value="submit">
+	                <span class="line_t"></span>
+	                <span class="line_r"></span>
+	                <span class="line_b"></span>
+	                <span class="line_l"></span>
+	            </a>
+	        </li>
+	    </ul>
+	</div>
+	<!-- message]] -->
+</div>
+<!-- content[[ -->
+
+
+
+
+{dede:include filename="footer.htm"/}
+
+<script>
+    function init_present(){
+
+    }
+    init_present();
+</script>
+</body>
+</html>

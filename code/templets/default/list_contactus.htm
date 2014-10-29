@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<title>{dede:global.cfg_webname/}</title>
+{dede:include filename="head_init.htm"/}
+</head>
+<body>  
+<!-- header[[ -->
+{dede:include filename="header.htm"/}
+<!-- header]] -->
+   
+<!-- banner[[ -->
+{dede:include filename="banner.htm"/}
+<!-- banner]] -->
+
+
+<!-- content[[ -->
+<div class="mian_content mob_title mob_title_detail contactus">
+  <!-- breadcroumd[[ -->
+  <div class="breadcrumb">
+    {dede:field name='position'/}
+      <!-- <a href="index.html">Home<span class="line"></span></a>
+      &nbsp;&gt;<a href="news.html">News<span class="line"></span></a> -->
+  </div>
+  <!-- breadcroumd]] -->
+ 
+  <!-- Contact Us[[ -->
+  <h1 class="title">{dede:field.title/}</h1>
+  
+  <div class="map" id="dituContent"></div>
+  <ul class="contact_info">
+      <li class="list">
+          <span class="info_title">Tel:</span>
+          <p class="info">
+              +86 18718397377  (Peter)<br/>
+              +86 15817078387  (Daniel)<br/>
+          </p>
+      </li>
+      <li class="list">
+          <span class="info_title">E-mail:</span>
+          <p class="info">
+          info@jpstrass.com<br/>
+          danielyang@jpstrass.com<br/>
+          karenwang@jpstrass.com<br/>
+          alicelai@jpstrass.com<br/>
+          </p>
+      </li>
+      <li class="list">
+          <span class="info_title">Add:</span>
+          <p class="info"></p>
+      </li>
+  </ul>
+  
+  <!-- Contact Us]] -->
+
+</div>
+<!-- content[[ -->
+
+
+
+
+{dede:include filename="footer.htm"/}
+
+<script>
+    function init_present(){
+
+    }
+    init_present();
+</script>
+</body>
+</html>

@@ -18,7 +18,6 @@
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/page.css">
 		<link rel="stylesheet" href="css/iconfont.css">
-			
 	</head>
 	<body>	
 		<!-- header[[ -->
@@ -71,7 +70,7 @@
        
         <!-- news[[ -->
         <h1 class="title">Product Showcase</h1>
-        <ul class="product_wrap">
+        <ul class="product_wrap" id="product">
             <li class="list">
                
                <div class="txt_wrap">
@@ -387,8 +386,10 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-                //返回顶部
-                toTop();
+          //返回顶部
+          toTop();
+
+          
 			}
 			init();
 		</script>
@@ -404,10 +405,15 @@
                     });    
                 }
             });
+
+            (function(){
+              $('#product .list:odd').css("margin-right",'0');
+            })();
+            
         </script>
         <![endif]-->
         
-        <!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 		    <script src="js/hack/ie7_font.js"></script>
 		<![endif]-->
 	</body>

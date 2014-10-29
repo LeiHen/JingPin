@@ -154,4 +154,11 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
+$cfg_add = 'NO: 409-10th, Haizhu Ind. Park, Haizhu Dist-510288, Guangzhou, China';
+$cfg_tel = '+86 18718397377  (Peter)<br/>
++86 15817078387  (Daniel)<br/>';
+$cfg_email = 'info@jpstrass.com<br/>
+danielyang@jpstrass.com<br/>
+karenwang@jpstrass.com<br/>
+alicelai@jpstrass.com<br/>';
 ?>

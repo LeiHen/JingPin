@@ -1,0 +1,1 @@
+INSERT INTO `jp_uploads` VALUES('1','2','测试','/uploads/allimg/141028/1-14102Q120380-L.jpg','1','0','0','0','8528','1414466438','1');

@@ -1,5 +1,35 @@
 <?php
-$z[0]=Array("include","",0,41);
-$z[0][4]['filename']="index_home.htm";
+$z[0]=Array("global","",88,115);
+$z[0][4]['name']="cfg_keywords";
+$z[1]=Array("global","",153,183);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",194,220);
+$z[2][4]['name']="cfg_webname";
+$z[3]=Array("include","",230,270);
+$z[3][4]['filename']="head_init.htm";
+$z[4]=Array("include","",310,347);
+$z[4][4]['filename']="header.htm";
+$z[5]=Array("include","",392,429);
+$z[5][4]['filename']="banner.htm";
+$z[6]=Array("global","",600,632);
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("global","",1296,1328);
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("type","[field:title/]",2148,2196);
+$z[8][4]['typeid']="4";
+$z[9]=Array("global","",4802,4834);
+$z[9][4]['name']="cfg_templets_skin";
+$z[10]=Array("global","",5111,5143);
+$z[10][4]['name']="cfg_templets_skin";
+$z[11]=Array("global","",5420,5452);
+$z[11][4]['name']="cfg_templets_skin";
+$z[12]=Array("global","",5729,5761);
+$z[12][4]['name']="cfg_templets_skin";
+$z[13]=Array("global","",6038,6070);
+$z[13][4]['name']="cfg_templets_skin";
+$z[14]=Array("type","\r\n            <h1 class=\"title\">[field.title/]</h1>\r\n            <div class=\"wrap fl\">\r\n                <div class=\"info\">\r\n                    [field.content/]\r\n                </div>\r\n            </div>\r\n            ",7072,7324);
+$z[14][4]['typeid']="6";
+$z[15]=Array("include","",10808,10845);
+$z[15][4]['filename']="footer.htm";
 
 ?>
