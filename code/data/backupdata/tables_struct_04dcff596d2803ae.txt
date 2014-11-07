@@ -947,6 +947,18 @@ CREATE TABLE `jp_member_vhistory` (
   KEY `mid` (`mid`,`vid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `jp_message_form`;
+
+CREATE TABLE `jp_message_form` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `ifcheck` tinyint(1) NOT NULL default '0',
+  `name` varchar(100) NOT NULL default '',
+  `email` varchar(250) NOT NULL default '',
+  `phone` int(11) NOT NULL default '0',
+  `message` mediumtext,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 DROP TABLE IF EXISTS `jp_moneycard_record`;
 
 CREATE TABLE `jp_moneycard_record` (
