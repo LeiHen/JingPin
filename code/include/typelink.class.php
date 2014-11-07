@@ -110,7 +110,7 @@ class TypeLink
     //islink 表示返回的列表是否带连接
     function GetPositionLink($islink=true)
     {
-        $indexpage = "<a href='".$this->indexUrl."'>".$this->indexName."</a>";
+        $indexpage = "<a href='".$this->indexUrl."'>".$this->indexName."<span class='line'></span></a>";
         if($this->valuePosition!="" && $islink)
         {
             return $this->valuePosition;
@@ -191,7 +191,7 @@ class TypeLink
     function GetOneTypeLink($typeinfos)
     {
         $typepage = $this->GetOneTypeUrl($typeinfos);
-        $typelink = "<a href='".$typepage."'>".$typeinfos['typename']."</a>";
+        $typelink = "<a href='".$typepage."'>".$typeinfos['typename']."<span class='line'></span></a>";
         return $typelink;
     }
 

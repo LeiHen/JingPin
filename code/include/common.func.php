@@ -221,7 +221,7 @@ function ShowMsg($msg, $gourl, $onlymsg=0, $limittime=0)
         {
             if( $gourl != 'javascript:;' && $gourl != '')
             {
-                $rmsg .= "<br /><a href='{$gourl}'>如果你的浏览器没反应，请点击这里...</a>";
+                $rmsg .= "<br /><a href='{$gourl}'  >如果你的浏览器没反应，请点击这里...</a>";
                 $rmsg .= "<br/></div>\");\r\n";
                 $rmsg .= "setTimeout('JumpUrl()',$litime);";
             }

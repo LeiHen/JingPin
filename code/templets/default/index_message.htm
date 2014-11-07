@@ -16,36 +16,42 @@
 {dede:include filename="banner.htm"/}
 <!-- banner]] -->
 
-
 <!-- content[[ -->
 <div class="mian_content mob_title message">
   <!-- breadcroumd[[ -->
   <div class="breadcrumb">
     {dede:field name='position'/}
-      <!-- <a href="index.html">Home<span class="line"></span></a>
-      &nbsp;&gt;<a href="news.html">News<span class="line"></span></a> -->
   </div>
   <!-- breadcroumd]] -->
  
 	<!-- message[[ -->
 	<h1 class="title">{dede:field.title/}</h1>
 	<div class="content">
-	    <ul>
-	        <li class="list"><span class="txt">name:</span><input type="text" value=""></li>
-	        <li class="list"><span class="txt">e-mail:</span><input type="text" value=""></li>
-	        <li class="list"><span class="txt">phone:</span><input type="text" value=""></li>
-	        <li class="list"><span class="txt">message:</span><textarea class="txts" name="" id="" ></textarea></li>
-	        <li class="list pt50">
-	            <span class="txt"></span>
-	            <a class="btn" title="submit">
-	                <input type="submit" value="submit">
-	                <span class="line_t"></span>
-	                <span class="line_r"></span>
-	                <span class="line_b"></span>
-	                <span class="line_l"></span>
-	            </a>
-	        </li>
-	    </ul>
+		<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+		    <ul>
+		        <li class="list"><span class="txt">name:</span><input type="text" name="name" id="name" value=""></li>
+		        <li class="list"><span class="txt">e-mail:</span><input type="text" name="email" id="email" value=""></li>
+		        <li class="list"><span class="txt">phone:</span><input type="text" name="phone" id="phone" value=""></li>
+		        <li class="list"><span class="txt">message:</span><textarea name="message" id="message"  class="txts"  ></textarea></li>
+		        <li class="list pt50">
+		            <span class="txt"></span>
+		            <a class="btn" title="submit">
+		                <input type="submit" name="submit" value="submit">
+		                <span class="line_t"></span>
+		                <span class="line_r"></span>
+		                <span class="line_b"></span>
+		                <span class="line_l"></span>
+		            </a>
+		            <input type="hidden" name="action" value="post">
+					<input type="hidden" name="diyid" value="1">
+					<input type="hidden" name="do" value="2">
+		            <input type="hidden" name="dede_fields" value="name,text;email,text;phone,int;message,multitext">
+					<input type="hidden" name="dede_fieldshash" value="c184801912f95df4d7f655841229c077">
+		        </li>
+		    </ul>
+		</form>
+
+
 	</div>
 	<!-- message]] -->
 </div>

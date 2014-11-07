@@ -15,7 +15,7 @@ $z[6]=Array("field","",578,607);
 $z[6][4]['name']="position";
 $z[7]=Array("field","",832,851);
 $z[7][4]['name']="title";
-$z[8]=Array("include","",1758,1795);
+$z[8]=Array("include","",2334,2371);
 $z[8][4]['filename']="footer.htm";
 
 ?>

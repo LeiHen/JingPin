@@ -91,14 +91,17 @@ if($action == 'post')
             {
                 //diy.php?action=view&diyid={$diy->diyid}&id=$id
                 $goto = "diy.php?action=list&diyid={$diy->diyid}";
+                // $goto ='javascript:void(null)';
                 $bkmsg = '发布成功，现在转向表单列表页...';
             }
             else
             {
                 $goto = !empty($cfg_cmspath) ? $cfg_cmspath : '/';
+                // $goto ='javascript:void(null)';
                 $bkmsg = '发布成功，请等待管理员处理...';
             }
             showmsg($bkmsg, $goto);
+            // showmsg($bkmsg);
         }
     }
 }
