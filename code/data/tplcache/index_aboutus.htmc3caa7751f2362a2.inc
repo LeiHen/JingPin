@@ -9,15 +9,17 @@ $z[3]=Array("include","",230,270);
 $z[3][4]['filename']="head_init.htm";
 $z[4]=Array("include","",310,347);
 $z[4][4]['filename']="header.htm";
-$z[5]=Array("include","",392,429);
-$z[5][4]['filename']="banner.htm";
-$z[6]=Array("field","",587,616);
-$z[6][4]['name']="position";
-$z[7]=Array("field","",844,863);
-$z[7][4]['name']="title";
-$z[8]=Array("field","",994,1015);
-$z[8][4]['name']="content";
-$z[9]=Array("include","",1088,1125);
-$z[9][4]['filename']="footer.htm";
+$z[5]=Array("field","",550,579);
+$z[5][4]['name']="position";
+$z[6]=Array("field","",807,829);
+$z[6][4]['name']="typename";
+$z[7]=Array("type","[field:typename/]",999,1050);
+$z[7][4]['typeid']="2";
+$z[8]=Array("channel","\r\n            <li class=\"list\"><a href=\"[field:typeurl/]\">[field:typename/]<span class=\"link\"></span></a></li>\r\n         ",1127,1288);
+$z[8][4]['type']="son";
+$z[9]=Array("field","",1493,1514);
+$z[9][4]['name']="content";
+$z[10]=Array("include","",1587,1624);
+$z[10][4]['filename']="footer.htm";
 
 ?>

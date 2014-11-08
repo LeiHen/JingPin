@@ -9,13 +9,11 @@ $z[3]=Array("include","",230,270);
 $z[3][4]['filename']="head_init.htm";
 $z[4]=Array("include","",310,347);
 $z[4][4]['filename']="header.htm";
-$z[5]=Array("include","",392,429);
-$z[5][4]['filename']="banner.htm";
-$z[6]=Array("field","",578,607);
-$z[6][4]['name']="position";
-$z[7]=Array("field","",832,851);
-$z[7][4]['name']="title";
-$z[8]=Array("include","",2334,2371);
-$z[8][4]['filename']="footer.htm";
+$z[5]=Array("field","",539,568);
+$z[5][4]['name']="position";
+$z[6]=Array("field","",649,668);
+$z[6][4]['name']="title";
+$z[7]=Array("include","",2166,2203);
+$z[7][4]['filename']="footer.htm";
 
 ?>

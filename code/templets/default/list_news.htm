@@ -13,7 +13,7 @@
 <!-- header]] -->
    
 <!-- banner[[ -->
-{dede:include filename="banner.htm"/}
+<!-- {dede:include filename="banner.htm"/} -->
 <!-- banner]] -->
 
 
@@ -30,14 +30,16 @@
   <!-- news[[ -->
   <h1 class="title">{dede:field name='typename'/}</h1>
   <ul class="wrap">
+      <!-- {dede:list}
       <li class="list">
          <a href="newsDetail.html" class="link" >
-          <time class="time">[2014/07/02]</time>
+          <time class="time">[[field:pubdate function=strftime('%Y/%m/%d',@me)/]]</time>
           <h2 class="sub_title">LADYCAT POWERED BY SPINDRIFT RACING ON THE</h2>
           <span class="more icon_arrows_r more"></span>
           <span class="line"></span>
          </a>
       </li>
+      {/dede:list} -->
       <li class="list">
          <a href="newsDetail.html" class="link" >
           <time class="time">[2014/07/02]</time>

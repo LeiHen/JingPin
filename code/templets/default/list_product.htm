@@ -13,7 +13,7 @@
 <!-- header]] -->
    
 <!-- banner[[ -->
-{dede:include filename="banner.htm"/}
+
 <!-- banner]] -->
 
 
@@ -29,6 +29,25 @@
  
   <!-- news[[ -->
         <h1 class="title">{dede:field.typename/}</h1>
+
+        <!-- 二级导航[[ -->
+        <div class="pa sub_nav_wrap">
+           <div class="sub_nav">
+               <div class="title_wrap">
+                   <h1 class="nav_title ">{dede:type typeid="4"}[field:typename/]{/dede:type}</h1>
+               </div>
+               
+               <ul class="nav_wrap ">
+               {dede:channel type='son'}
+                  <li class="list"><a href="[field:typeurl/]">[field:typename/]<span class="link"></span></a></li>
+               {/dede:channel}
+               </ul>
+               
+           </div>
+        </div>
+        <!-- 二级导航]] -->
+
+
         <ul class="product_wrap">
         {dede:list pagesize='10'}
             <li class="list">

@@ -51,67 +51,26 @@
        
         <!-- block_02[[ -->
         <div class="mod_block index_block_02">
-           <h1 class="title">{dede:type typeid="4"}[field:title/]{/dede:type}</h1>
+           <h1 class="title">{dede:type typeid="4"}[field:ytpename/]{/dede:type}</h1>
            <ul class="sub_nav">
+                {dede:channel type='son' typeid="4"}
                 <li class="list">
-                    <a href="" class="btn">
-                        Hot Fix Rhinestone
+                    <a href="[field:typeurl/]" class="btn">
+                        [field:typename/]
                         <span class="line_t"></span>
                         <span class="line_r"></span>
                         <span class="line_b"></span>
                         <span class="line_l"></span>
                     </a>
                 </li>
-                <li class="list">
-                    <a href="" class="btn">
-                        Hot Fix Transfer Motifs
-                        <span class="line_t"></span>
-                        <span class="line_r"></span>
-                        <span class="line_b"></span>
-                        <span class="line_l"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="" class="btn">
-                        Rhinestone Sticker
-                        <span class="line_t"></span>
-                        <span class="line_r"></span>
-                        <span class="line_b"></span>
-                        <span class="line_l"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="" class="btn">
-                        Crystal Rings
-                        <span class="line_t"></span>
-                        <span class="line_r"></span>
-                        <span class="line_b"></span>
-                        <span class="line_l"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="" class="btn">
-                        Acrylic Stone
-                        <span class="line_t"></span>
-                        <span class="line_r"></span>
-                        <span class="line_b"></span>
-                        <span class="line_l"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="" class="btn">
-                        Rhinestone Wedding Dress Appique
-                        <span class="line_t"></span>
-                        <span class="line_r"></span>
-                        <span class="line_b"></span>
-                        <span class="line_l"></span>
-                    </a>
-                </li>
+                {/dede:channel}
+
                 
            </ul>
            
            <div class="wrap">
                <ul class="roll_banner">
+
                     <li>
                         <a href="#">
                             <img src="{dede:global.cfg_templets_skin/}/images/product/cover/img_001_380x240.jpg" alt="" class="img">
@@ -149,13 +108,15 @@
            </div>
            
            <div class="tc">
-                <a href="" class="btn">
+                {dede:type typeid="4"}
+                <a href="{dede:typeurl/}" class="btn">
                     Non hot fix nail arts crystal
                     <span class="line_t"></span>
                     <span class="line_r"></span>
                     <span class="line_b"></span>
                     <span class="line_l"></span>
                 </a>
+                {/dede:type}
            </div>
            
             
@@ -165,87 +126,39 @@
       
         <!-- block_03[[ -->
         <div class="mod_block index_block_03">
-            {dede:type typeid="6"}
-            <h1 class="title">[field.title/]</h1>
+            <h1 class="title">{dede:type typeid="3"}[field:typename/]{/dede:type}</h1> 
             <div class="wrap fl">
+            {dede:arclist typeid="3" row="1"}
+                <h2 class="sub_title">[field:title/]</h2>
                 <div class="info">
-                    [field.content/]
+                    [field:body/]
                 </div>
+            {/dede:arclist}
             </div>
-            {/dede:type}
+            
             <div class="wrap fr">
                 <ul class="ul">
+                {dede:arclist typeid="3" limit="1,10"}
                     <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
+                        <a href="[field:arcurl/">
+                            [field:title/]
                             <span class="line"></span>
                         </a>
                     </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="">
-                            Guangzhou JingPin Garment Accessory Co.Ltd was established in
-                            <span class="line"></span>
-                        </a>
-                    </li>
+                {/dede:arclist}
                 </ul>
             </div>
             
             <div class="tc">
-                <a href="#" class="btn">
+                {dede:type typeid="3" }
+                <a href="{dede:typeurl/}" class="btn">
                     Non hot fix nail arts crystal
                     <span class="line_t"></span>
                     <span class="line_r"></span>
                     <span class="line_b"></span>
                     <span class="line_l"></span>
                 </a>
+                {/dede:type}
             </div>
             
             <div class="arrow"></div>

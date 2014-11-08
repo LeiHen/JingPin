@@ -84,7 +84,14 @@
 	+zoom: 1;*/
 	float: left;
 	margin: 0 0 0 25px;
+	overflow: hidden;
 }
+
+.index_block_02 .roll_banner li a{
+	
+}
+
+
 .index_block_02 .roll_banner li:first-child{
 	margin: 0;
 }
@@ -122,10 +129,10 @@
 }
 
 .index_block_02 .wrap .btn_l:active{
-	left: -2px;
+	left: -6px;
 }
 .index_block_02 .wrap .btn_r:active{
-	right: -2px;
+	right: -4px;
 }
 
 
@@ -152,6 +159,17 @@
 	width: 50%;
 	height:380px;
 }
+
+.index_block_03 .wrap .sub_title{
+	font-size: 1.6em;
+	font-weight: bold;
+	line-height: 2em;
+	/*color: #*/
+	text-align:center;
+	padding: 0 0 20px 0;
+
+}
+
 .index_block_03 .wrap .info{
 	width: 70%;
 	margin: 0 10% 0 20%;
@@ -364,10 +382,9 @@
 .product .product_wrap .list{ float: left; width: 380px; margin: 0 20px 20px 0; padding: 5px; background: #fff; position: relative; overflow: hidden; }
 .product .product_wrap .list:nth-child(2n),.product .product_wrap .list_clear{ margin: 0 0 20px 0; }
 .product .product_wrap .list .img_wrap{ position: relative; left: 0; }
-.product .product_wrap .list .img_wrap .img{ display: block; width: 380px;height: 240px; }
-.product .product_wrap .list .img_wrap .name{ font-size: 2em; line-height: 2em; color: #686868; text-align: right; border-top:2px solid #686868; display: block; margin: 10px 0 0 0; padding: 0 20px 0 0;}
+.product .product_wrap .list .img_wrap .img{ display: block; width: 380px;height: 240px;}
+.product .product_wrap .list .img_wrap .name{ font-size: 2em; line-height: 2em; color: #686868; text-align: right; border-top:2px solid #686868; display: block; margin: 10px 0 0 0;padding: 0 20px 0 0; }
 .product .product_wrap .list .img_wrap .type{
-	
 	font-size: 1.4em;
 	line-height: 50px;
 	text-align:center;
@@ -383,7 +400,6 @@
 	position: absolute;
 	top: 0;
 	right: 20px;
-
 }
 :root .product .product_wrap .list .img_wrap .type{
 	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#00777777', endColorstr='#00777777');
@@ -667,6 +683,7 @@
 .contactus .contact_info{
 
 }
+
 
 /*.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}*/
 /*.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}*/
