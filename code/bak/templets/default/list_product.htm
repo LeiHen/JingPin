@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<title>{dede:global.cfg_webname/}</title>
+{dede:include filename="head_init.htm"/}
+</head>
+<body>  
+<!-- header[[ -->
+{dede:include filename="header.htm"/}
+<!-- header]] -->
+   
+<!-- banner[[ -->
+
+<!-- banner]] -->
+
+
+<!-- content[[ -->
+<div class="mian_content mob_title product">
+  <!-- breadcroumd[[ -->
+  <div class="breadcrumb">
+    {dede:field name='position'/}
+      <!-- <a href="index.html">Home<span class="line"></span></a>
+      &nbsp;&gt;<a href="news.html">News<span class="line"></span></a> -->
+  </div>
+  <!-- breadcroumd]] -->
+ 
+  <!-- news[[ -->
+        <h1 class="title">{dede:field.typename/}</h1>
+
+        <!-- 二级导航[[ -->
+        <div class="pa sub_nav_wrap">
+           <div class="sub_nav">
+               <div class="title_wrap">
+                   <h1 class="nav_title ">{dede:type typeid="4"}[field:typename/]{/dede:type}</h1>
+               </div>
+               
+               <ul class="nav_wrap ">
+               {dede:channel type='son'}
+                  <li class="list"><a href="[field:typeurl/]">[field:typename/]<span class="link"></span></a></li>
+               {/dede:channel}
+               </ul>
+               
+           </div>
+        </div>
+        <!-- 二级导航]] -->
+
+
+        <ul class="product_wrap">
+        {dede:list pagesize='10'}
+            <li class="list">
+               
+               <div class="txt_wrap">
+                   <p class="info">[field:description/]</p>
+                   <a href="[field:arcurl/]" class="btn ext_btn_capital" target="_blink" title="点击查看">
+                        more
+                        <span class="line_t"></span>
+                        <span class="line_r"></span>
+                        <span class="line_b"></span>
+                        <span class="line_l"></span>
+                   </a>
+               </div>
+               
+               <div class="img_wrap">
+                   <img src="[field:picname/]" class="img" alt="[field:title/]" title="[field:title/]">
+                   <h2 class="name">[field:title/]</h2>
+                   <span class="type">strass</span>
+               </div>
+            </li>
+            {/dede:list}
+        </ul>
+        
+        <!-- page[[ -->
+        <div class="mod_page">
+            <div class="info">
+                页数：<span>1</span>/<span>15</span>页&nbsp;共<span>143</span>条
+            </div>
+            <ul class="ul">
+                <li class="list">
+                    <a href="" class="btn" rel="prev">
+                        上一页
+                        <span class="line_t"></span>
+                        <span class="line_r"></span>
+                        <span class="line_b"></span>
+                        <span class="line_l"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="" class="btn" rel="next">
+                        下一页
+                        <span class="line_t"></span>
+                        <span class="line_r"></span>
+                        <span class="line_b"></span>
+                        <span class="line_l"></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="go">
+                <input type="text" class="pagetxt" value="">
+                <a class="btn">
+                    <input type="button" class="btn_go" value="GO">
+                    <span class="line_t"></span>
+                    <span class="line_r"></span>
+                    <span class="line_b"></span>
+                    <span class="line_l"></span>
+                </a>
+        <!--                <input type="button" class="btn" value="GO">-->
+            </div>
+
+        </div>
+        <!-- page]] -->
+        
+        <!-- news]] -->
+
+</div>
+<!-- content[[ -->
+
+{dede:include filename="footer.htm"/}
+
+<script>
+    function init_present(){
+		(function(){
+          $('#product .list:odd').css("margin-right",'0');
+        })();      
+    }
+    init_present();
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<title>{dede:global.cfg_webname/}</title>
+{dede:include filename="head_init.htm"/}
+</head>
+<body>  
+<!-- header[[ -->
+{dede:include filename="header.htm"/}
+<!-- header]] -->
+   
+<!-- banner[[ -->
+{dede:include filename="banner.htm"/}
+<!-- banner]] -->
+
+
+<!-- content[[ -->
+<div class="mian_content mob_title news">
+  <!-- breadcroumd[[ -->
+  <div class="breadcrumb">
+    {dede:field name='position'/}
+      <!-- <a href="index.html">Home<span class="line"></span></a>
+      &nbsp;&gt;<a href="news.html">News<span class="line"></span></a> -->
+  </div>
+  <!-- breadcroumd]] -->
+ 
+  <!-- news[[ -->
+  <h1 class="title">{dede:field name='typename'/}</h1>
+  <ul class="wrap">
+  {dede:arclist row="10" titlelen="60" }
+      <li class="list">
+         <a href="[field:arcurl/]" class="link" >
+          <time class="time">[[field:pubdate function=strftime('%Y/%m/%d',@me)/]]</time>
+          <h2 class="sub_title">[field:title/]</h2>
+          <span class="more icon_arrows_r more"></span>
+          <span class="line"></span>
+         </a>
+      </li>
+  {/dede:arclist}
+  </ul>
+  
+  
+  <div class="mod_page">
+      <div class="info">
+          页数：<span>1</span>/<span>15</span>页&nbsp;共<span>143</span>条
+      </div>
+      <ul class="ul">
+          <li class="list">
+              <a href="" class="btn" rel="prev">
+                  上一页
+                  <span class="line_t"></span>
+                  <span class="line_r"></span>
+                  <span class="line_b"></span>
+                  <span class="line_l"></span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="" class="btn" rel="next">
+                  下一页
+                  <span class="line_t"></span>
+                  <span class="line_r"></span>
+                  <span class="line_b"></span>
+                  <span class="line_l"></span>
+              </a>
+          </li>
+      </ul>
+      <div class="go">
+          <input type="text" class="pagetxt" value="">
+          <a class="btn">
+              <input type="button" class="btn_go" value="GO">
+              <span class="line_t"></span>
+              <span class="line_r"></span>
+              <span class="line_b"></span>
+              <span class="line_l"></span>
+          </a>
+<!--                <input type="button" class="btn" value="GO">-->
+      </div>
+      
+  </div>
+  
+  <!-- news]] -->
+</div>
+<!-- content[[ -->
+
+
+
+
+{dede:include filename="footer.htm"/}
+
+<script>
+    function init_present(){
+
+    }
+    init_present();
+</script>
+</body>
+</html>

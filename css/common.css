@@ -563,6 +563,27 @@ body,
 }
 
 
+/* sub_banner */
+.sub_banner{
+	position: relative;
+	min-width: 1200px;
+	height: 240px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	background: #eee;
+}
+
+.sub_banner .wrap{
+	position: absolute;
+	left: 50%;
+	background: red;
+}
+
+
+
+
+
+
 
 
 /* breadcrumb */

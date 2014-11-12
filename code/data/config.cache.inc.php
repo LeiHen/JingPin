@@ -1,7 +1,7 @@
 <?php
 $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source,file_put_contents';
 $cfg_disable_tags = 'php';
-$cfg_basehost = 'http://t8.com';
+$cfg_basehost = 'http://t24.com';
 $cfg_cmspath = '';
 $cfg_cookie_encode = 'taspuPrWMfm0E4ahO7uRhv8Y8pdo1';
 $cfg_indexurl = '/';

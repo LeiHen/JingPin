@@ -1,0 +1,1 @@
+INSERT INTO `jp_homepageset` VALUES('default/index.htm','../index.html','0');

@@ -21,26 +21,30 @@
           
            <div class="wrap fl">
                <img src="{dede:global.cfg_templets_skin/}/images/block_01_img_001_240x240.png" alt="" class="img">
-               <h1 class="title">Company profile</h1>
-               <p class="txt mb10">Guangzhou JingPin Garment Accessory Co.Ltd was established in the year of 2000,which is a professional manufacture of hotfix rhinestone and motifs.</p>
-               <a href="#" class="btn ext_btn_capital mt10">
-               more
-               <span class="line_t"></span>
-               <span class="line_r"></span>
-               <span class="line_b"></span>
-               <span class="line_l"></span>
+               {dede:type typeid="17"}
+               <h1 class="title">[field:typename/]</h1>
+               {/dede:type}
+               <p class="txt mb10">{dede:sql sql='Select content from jp_arctype where id=17'}[field:content function='Html2text(cn_substr(@me,200))' /]{/dede:sql}</p>
+               <a href="{dede:type typeid='17'}[field:typelink/]{/dede:type}" class="btn ext_btn_capital mt10">
+                 more
+                 <span class="line_t"></span>
+                 <span class="line_r"></span>
+                 <span class="line_b"></span>
+                 <span class="line_l"></span>
                </a>
            </div>
            <div class="wrap fr">
                <img src="{dede:global.cfg_templets_skin/}/images/block_01_img_002_240x240.png" alt="" class="img">
-               <h1 class="title">Company profil</h1>
-               <p class="txt">Guangzhou JingPin Garment Accessory Co.Ltd was established in the year of 2000,which is a professional manufacture of hotfix rhinestone and motifs. </p>
-               <a href="#" class="btn ext_btn_capital mt10">
-               more
-               <span class="line_t"></span>
-               <span class="line_r"></span>
-               <span class="line_b"></span>
-               <span class="line_l"></span>
+               {dede:type typeid="14"}
+               <h1 class="title">[field:typename/]</h1>
+               {/dede:type}
+               <p class="txt">{dede:sql sql='Select content from jp_arctype where id=14'}[field:content function='Html2text(cn_substr(@me,200))' /]{/dede:sql}</p>
+               <a href="{dede:type typeid='14'}[field:typelink/]{/dede:type}" class="btn ext_btn_capital mt10">
+                 more
+                 <span class="line_t"></span>
+                 <span class="line_r"></span>
+                 <span class="line_b"></span>
+                 <span class="line_l"></span>
                </a>
            </div>
            
@@ -108,15 +112,13 @@
            </div>
            
            <div class="tc">
-                {dede:type typeid="4"}
-                <a href="{dede:typeurl/}" class="btn">
+                <a href="{dede:type typeid='4'}[field:typelink/]{/dede:type}" class="btn">
                     Non hot fix nail arts crystal
                     <span class="line_t"></span>
                     <span class="line_r"></span>
                     <span class="line_b"></span>
                     <span class="line_l"></span>
                 </a>
-                {/dede:type}
            </div>
            
             
@@ -140,7 +142,7 @@
                 <ul class="ul">
                 {dede:arclist typeid="3" limit="1,10"}
                     <li class="list">
-                        <a href="[field:arcurl/">
+                        <a href="[field:arcurl/]">
                             [field:title/]
                             <span class="line"></span>
                         </a>
@@ -150,15 +152,15 @@
             </div>
             
             <div class="tc">
-                {dede:type typeid="3" }
-                <a href="{dede:typeurl/}" class="btn">
+                
+                <a href="{dede:type typeid='3'}[field:typelink/]{/dede:type}" class="btn">
                     Non hot fix nail arts crystal
                     <span class="line_t"></span>
                     <span class="line_r"></span>
                     <span class="line_b"></span>
                     <span class="line_l"></span>
                 </a>
-                {/dede:type}
+               
             </div>
             
             <div class="arrow"></div>
@@ -175,10 +177,10 @@
 
 
 {dede:include filename="footer.htm"/}
-
 <script>
     function init_present(){
-
+      //banner
+      scrollImg(1000,5000);
     }
     init_present();
 </script>

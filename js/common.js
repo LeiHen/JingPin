@@ -167,7 +167,6 @@ function scrollImg(animateTime,time){
     navA.click(obj,navBtn);
     setInterval(function(){delay(imgS,nav,animateTime)},time)
 }
-scrollImg(1000,5000);
 /* @end **/
 
 

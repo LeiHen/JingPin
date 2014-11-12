@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<title>{dede:global.cfg_webname/}</title>
+{dede:include filename="head_init.htm"/}
+</head>
+<body>  
+<!-- header[[ -->
+{dede:include filename="header.htm"/}
+<!-- header]] -->
+   
+<!-- banner[[ -->
+
+<!-- banner]] -->
+
+
+<!-- content[[ -->
+<div class="mian_content mob_title mob_title_detail contactus">
+  <!-- breadcroumd[[ -->
+  <div class="breadcrumb">
+    {dede:field name='position'/}
+      <!-- <a href="index.html">Home<span class="line"></span></a>
+      &nbsp;&gt;<a href="news.html">News<span class="line"></span></a> -->
+  </div>
+  <!-- breadcroumd]] -->
+ 
+  <!-- Contact Us[[ -->
+  <h1 class="title">{dede:field.title/}</h1>
+  
+  <div class="map" id="dituContent"></div>
+  <ul class="contact_info">
+      <li class="list">
+          <span class="info_title">Tel:</span>
+          <p class="info">
+              {dede:global.cfg_tel/}
+          </p>
+      </li>
+      <li class="list">
+          <span class="info_title">E-mail:</span>
+          <p class="info">
+          {dede:global.cfg_email/}
+          </p>
+      </li>
+      <li class="list">
+          <span class="info_title">Add:</span>
+          <p class="info">{dede:global.cfg_add/}</p>
+      </li>
+  </ul>
+  <!-- Contact Us]] -->
+
+</div>
+<!-- content[[ -->
+
+
+
+
+{dede:include filename="footer.htm"/}
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript">
+    function initPresent(){
+      //创建和初始化地图
+      initMap();
+    }
+    initPresent();
+</script>
+</body>
+</html>

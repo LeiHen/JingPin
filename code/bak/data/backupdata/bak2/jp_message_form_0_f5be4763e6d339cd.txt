@@ -1,0 +1,10 @@
+INSERT INTO `jp_message_form` VALUES('1','1','流星的泪痕','61955365@qq.com','2147483647','测试');
+INSERT INTO `jp_message_form` VALUES('2','0','sdfa','sdgsd','0','dssadfsdafasdf');
+INSERT INTO `jp_message_form` VALUES('3','0','asdfasdf','sadfasdfasdf','0','asdfasdf');
+INSERT INTO `jp_message_form` VALUES('4','0','wer','erwe','0','ewr');
+INSERT INTO `jp_message_form` VALUES('5','0','sf','sdf','0','sdf');
+INSERT INTO `jp_message_form` VALUES('6','0','sf','sdf','0','sdf');
+INSERT INTO `jp_message_form` VALUES('7','0','erf ','dsfasd','0','adfasdf');
+INSERT INTO `jp_message_form` VALUES('8','0','erf ','dsfasd','0','adfasdf');
+INSERT INTO `jp_message_form` VALUES('9','0','erf ','dsfasd','0','adfasdf');
+INSERT INTO `jp_message_form` VALUES('10','0','admina','dads','0','adf');

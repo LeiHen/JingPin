@@ -1,0 +1,48 @@
+<?php
+$z[0]=Array("global","",88,115);
+$z[0][4]['name']="cfg_keywords";
+$z[1]=Array("global","",153,183);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",194,220);
+$z[2][4]['name']="cfg_webname";
+$z[3]=Array("include","",230,270);
+$z[3][4]['filename']="head_init.htm";
+$z[4]=Array("include","",310,347);
+$z[4][4]['filename']="header.htm";
+$z[5]=Array("include","",392,429);
+$z[5][4]['filename']="banner.htm";
+$z[6]=Array("global","",600,632);
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("global","",1296,1328);
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("type","[field:ytpename/]",2148,2199);
+$z[8][4]['typeid']="4";
+$z[9]=Array("channel","\r\n                <li class=\"list\">\r\n                    <a href=\"[field:typeurl/]\" class=\"btn\">\r\n                        [field:typename/]\r\n                        <span class=\"line_t\"></span>\r\n                        <span class=\"line_r\"></span>\r\n                        <span class=\"line_b\"></span>\r\n                        <span class=\"line_l\"></span>\r\n                    </a>\r\n                </li>\r\n                ",2255,2728);
+$z[9][4]['type']="son";
+$z[9][4]['typeid']="4";
+$z[10]=Array("global","",2957,2989);
+$z[10][4]['name']="cfg_templets_skin";
+$z[11]=Array("global","",3266,3298);
+$z[11][4]['name']="cfg_templets_skin";
+$z[12]=Array("global","",3575,3607);
+$z[12][4]['name']="cfg_templets_skin";
+$z[13]=Array("global","",3884,3916);
+$z[13][4]['name']="cfg_templets_skin";
+$z[14]=Array("global","",4193,4225);
+$z[14][4]['name']="cfg_templets_skin";
+$z[15]=Array("type","\r\n                <a href=\"{dede:typeurl/}\" class=\"btn\">\r\n                    Non hot fix nail arts crystal\r\n                    <span class=\"line_t\"></span>\r\n                    <span class=\"line_r\"></span>\r\n                    <span class=\"line_b\"></span>\r\n                    <span class=\"line_l\"></span>\r\n                </a>\r\n                ",4703,5084);
+$z[15][4]['typeid']="4";
+$z[16]=Array("type","[field:typename/]",5330,5381);
+$z[16][4]['typeid']="3";
+$z[17]=Array("arclist","\r\n                <h2 class=\"sub_title\">[field:title/]</h2>\r\n                <div class=\"info\">\r\n                    [field:body/]\r\n                </div>\r\n            ",5436,5652);
+$z[17][4]['typeid']="3";
+$z[17][4]['row']="1";
+$z[18]=Array("arclist","\r\n                    <li class=\"list\">\r\n                        <a href=\"[field:arcurl/\">\r\n                            [field:title/]\r\n                            <span class=\"line\"></span>\r\n                        </a>\r\n                    </li>\r\n                ",5772,6090);
+$z[18][4]['typeid']="3";
+$z[18][4]['limit']="1,10";
+$z[19]=Array("type","\r\n                <a href=\"{dede:typeurl/}\" class=\"btn\">\r\n                    Non hot fix nail arts crystal\r\n                    <span class=\"line_t\"></span>\r\n                    <span class=\"line_r\"></span>\r\n                    <span class=\"line_b\"></span>\r\n                    <span class=\"line_l\"></span>\r\n                </a>\r\n                ",6195,6577);
+$z[19][4]['typeid']="3";
+$z[20]=Array("include","",6814,6851);
+$z[20][4]['filename']="footer.htm";
+
+?>

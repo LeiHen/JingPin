@@ -1,0 +1,1 @@
+[field:content function='Html2text(cn_substr(@me,400))' /]
