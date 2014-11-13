@@ -1009,11 +1009,11 @@ class Archives
         }
         if($lPage <= $totalPage)
         {
-            $PageList.="<li><a href='".$this->NameFirst."_".$lPage.".".$this->ShortName."'>下一页</a></li>";
+            $PageList.="<li><a href='".$this->NameFirst."_".$lPage.".".$this->ShortName."'>下一aaaa页</a></li>";
         }
         else
         {
-            $PageList.= "<li><a href='#'>下一页</a></li>";
+            $PageList.= "<li><a href='#'>下一ddf页</a></li>";
         }
         return $PageList;
     }

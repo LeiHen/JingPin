@@ -1,0 +1,10 @@
+INSERT INTO `jp_addonproduct` VALUES('2','7','','','127.0.0.1','vsdfsdfsdf sd','/uploads/141112/1-141112111230345.jpg','/uploads/141112/1-141112111230345.jpg','/uploads/141112/1-141112111230345.jpg','/uploads/141112/1-141112111230345.jpg');
+INSERT INTO `jp_addonproduct` VALUES('6','8','','','127.0.0.1','asdfasdfasdf','','','','');
+INSERT INTO `jp_addonproduct` VALUES('7','8','','','127.0.0.1','fafdasf','','','','');
+INSERT INTO `jp_addonproduct` VALUES('8','9','','','127.0.0.1','dasdfsdfaad','','','','');
+INSERT INTO `jp_addonproduct` VALUES('9','9','','','127.0.0.1','asdgdgfgfsdgfdg fgdfgdf','','','','');
+INSERT INTO `jp_addonproduct` VALUES('10','10','','','127.0.0.1','dfasdfgfdgfad fa g asdf ads g','','','','');
+INSERT INTO `jp_addonproduct` VALUES('11','11','','','127.0.0.1','adsfdsfgfsgsdgsdf','','','','');
+INSERT INTO `jp_addonproduct` VALUES('12','12','','','127.0.0.1','sdfasdfsdfasdfsdfasdfasd','','','','');
+INSERT INTO `jp_addonproduct` VALUES('13','13','','','127.0.0.1','cZXcxzvzvbcvcvds','','','','');
+INSERT INTO `jp_addonproduct` VALUES('14','19','','','127.0.0.1','fsgdfghsgjhjfkfgjf','/uploads/allimg/141028/1-14102Q120380-L.jpg','/uploads/allimg/141108/1-14110P939450-L.jpg','/uploads/allimg/141028/1-14102Q120380-L.jpg','/uploads/allimg/141028/1-14102Q120380-L.jpg');

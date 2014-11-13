@@ -13,7 +13,9 @@
 <!-- header]] -->
    
 <!-- banner[[ -->
-
+    <div class="banner_sub">
+        <div class="wrap"><img src="{dede:global.cfg_templets_skin/}/images/banner/other/product_1920x240.jpg" alt="" class="img"></div>
+    </div>
 <!-- banner]] -->
 
 
@@ -74,11 +76,12 @@
         
         <!-- page[[ -->
         <div class="mod_page">
-            <div class="info">
+            <!-- <div class="info">
                 页数：<span>1</span>/<span>15</span>页&nbsp;共<span>143</span>条
-            </div>
+            </div> -->
             <ul class="ul">
-                <li class="list">
+            {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+                <!-- <li class="list">
                     <a href="" class="btn" rel="prev">
                         上一页
                         <span class="line_t"></span>
@@ -95,9 +98,9 @@
                         <span class="line_b"></span>
                         <span class="line_l"></span>
                     </a>
-                </li>
+                </li> -->
             </ul>
-            <div class="go">
+            <!-- <div class="go">
                 <input type="text" class="pagetxt" value="">
                 <a class="btn">
                     <input type="button" class="btn_go" value="GO">
@@ -106,8 +109,7 @@
                     <span class="line_b"></span>
                     <span class="line_l"></span>
                 </a>
-        <!--                <input type="button" class="btn" value="GO">-->
-            </div>
+            </div> -->
 
         </div>
         <!-- page]] -->

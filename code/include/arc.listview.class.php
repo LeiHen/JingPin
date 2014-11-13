@@ -49,7 +49,7 @@ class ListView
      *
      * @access    public
      * @param     int  $typeid  栏目ID
-     * @param     int  $uppage  上一页
+     * @param     int  $uppage  上一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span>
      * @return    string
      */
     function __construct($typeid, $uppage=1)
@@ -958,37 +958,37 @@ class ListView
         if($totalpage<=1 && $this->TotalResult>0)
         {
 
-            return "<li><span class=\"pageinfo\">共 <strong>1</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
+            return "<li class=list><span class=\"pageinfo\">共 <strong>1</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
         }
         if($this->TotalResult == 0)
         {
-            return "<li><span class=\"pageinfo\">共 <strong>0</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
+            return "<li class=list><span class=\"pageinfo\">共 <strong>0</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
         }
         $purl = $this->GetCurUrl();
-        $maininfo = "<li><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
+        $maininfo = "<li class=list><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
         $tnamerule = $this->GetMakeFileRule($this->Fields['id'],"list",$this->Fields['typedir'],$this->Fields['defaultname'],$this->Fields['namerule2']);
         $tnamerule = preg_replace("/^(.*)\//", '', $tnamerule);
 
-        //获得上一页和主页的链接
+        //获得上一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span>和主页的链接
         if($this->PageNo != 1)
         {
-            $prepage.="<li><a href='".str_replace("{page}",$prepagenum,$tnamerule)."'>上一页</a></li>\r\n";
-            $indexpage="<li><a href='".str_replace("{page}",1,$tnamerule)."'>首页</a></li>\r\n";
+            $prepage.="<li class=list><a class=btn rel=next href='".str_replace("{page}",$prepagenum,$tnamerule)."'>上一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
+            $indexpage="<li class=list><a class=btn rel=next href='".str_replace("{page}",1,$tnamerule)."'>首页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
         }
         else
         {
-            $indexpage="<li>首页</li>\r\n";
+            $indexpage="<li class=list>首页</li>\r\n";
         }
 
-        //下一页,未页的链接
+        //下一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span>,未页的链接
         if($this->PageNo!=$totalpage && $totalpage>1)
         {
-            $nextpage.="<li><a href='".str_replace("{page}",$nextpagenum,$tnamerule)."'>下一页</a></li>\r\n";
-            $endpage="<li><a href='".str_replace("{page}",$totalpage,$tnamerule)."'>末页</a></li>\r\n";
+            $nextpage.="<li class=list><a class=btn rel=next href='".str_replace("{page}",$nextpagenum,$tnamerule)."'>下一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
+            $endpage="<li class=list><a class=btn rel=next href='".str_replace("{page}",$totalpage,$tnamerule)."'>末页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
         }
         else
         {
-            $endpage="<li>末页</li>\r\n";
+            $endpage="<li class=list>末页</li>\r\n";
         }
 
         //option链接
@@ -1036,11 +1036,11 @@ class ListView
         {
             if($j==$this->PageNo)
             {
-                $listdd.= "<li class=\"thisclass\">$j</li>\r\n";
+                $listdd.= "<li class=list>$j</li>\r\n";
             }
             else
             {
-                $listdd.="<li><a href='".str_replace("{page}",$j,$tnamerule)."'>".$j."</a></li>\r\n";
+                $listdd.="<li class=list><a class=btn rel=next href='".str_replace("{page}",$j,$tnamerule)."'>".$j."</a></li>\r\n";
             }
         }
         $plist = '';
@@ -1076,13 +1076,13 @@ class ListView
         $totalpage = ceil($this->TotalResult/$this->PageSize);
         if($totalpage<=1 && $this->TotalResult>0)
         {
-            return "<li><span class=\"pageinfo\">共 1 页/".$this->TotalResult." 条记录</span></li>\r\n";
+            return "<li class=list><span class=\"pageinfo\">共 1 页/".$this->TotalResult." 条记录</span></li>\r\n";
         }
         if($this->TotalResult == 0)
         {
-            return "<li><span class=\"pageinfo\">共 0 页/".$this->TotalResult." 条记录</span></li>\r\n";
+            return "<li class=list><span class=\"pageinfo\">共 0 页/".$this->TotalResult." 条记录</span></li>\r\n";
         }
-        $maininfo = "<li><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
+        $maininfo = "<li class=list><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
         
         $purl = $this->GetCurUrl();
         // 如果开启为静态,则对规则进行替换
@@ -1100,24 +1100,24 @@ class ListView
         //$hidenform = "<input type='hidden' name='tid' value='".$this->TypeID."'>\r\n";
         //$hidenform .= "<input type='hidden' name='TotalResult' value='".$this->TotalResult."'>\r\n";
 
-        //获得上一页和下一页的链接
+        //获得上一页和下一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span>的链接
         if($this->PageNo != 1)
         {
-            $prepage.="<li><a href='".$purl."PageNo=$prepagenum'>上一页</a></li>\r\n";
-            $indexpage="<li><a href='".$purl."PageNo=1'>首页</a></li>\r\n";
+            $prepage.="<li class=list><a class=btn rel=next href='".$purl."PageNo=$prepagenum'>上一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
+            $indexpage="<li class=list><a class=btn rel=next href='".$purl."PageNo=1'>首页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
         }
         else
         {
-            $indexpage="<li><a>首页</a></li>\r\n";
+            $indexpage="<li class=list><a class=btn rel=next>首页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
         }
         if($this->PageNo!=$totalpage && $totalpage>1)
         {
-            $nextpage.="<li><a href='".$purl."PageNo=$nextpagenum'>下一页</a></li>\r\n";
-            $endpage="<li><a href='".$purl."PageNo=$totalpage'>末页</a></li>\r\n";
+            $nextpage.="<li class=list><a class=btn rel=next href='".$purl."PageNo=$nextpagenum'>下一页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
+            $endpage="<li class=list><a class=btn rel=next href='".$purl."PageNo=$totalpage'>末页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
         }
         else
         {
-            $endpage="<li><a>末页</a></li>\r\n";
+            $endpage="<li class=list><a class=btn rel=next>末页<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
         }
 
 
@@ -1145,11 +1145,11 @@ class ListView
         {
             if($j==$this->PageNo)
             {
-                $listdd.= "<li class=\"thisclass\"><a>$j</a></li>\r\n";
+                $listdd.= "<li class=list><a class=btn rel=next>$j<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
             }
             else
             {
-                $listdd.="<li><a href='".$purl."PageNo=$j'>".$j."</a></li>\r\n";
+                $listdd.="<li class=list><a class=btn rel=next href='".$purl."PageNo=$j'>".$j."<span class=line_t></span><span class=line_r></span><span class=line_b></span><span class=line_l></span></a></li>\r\n";
             }
         }
 

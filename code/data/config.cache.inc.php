@@ -1,12 +1,12 @@
 <?php
 $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source,file_put_contents';
 $cfg_disable_tags = 'php';
-$cfg_basehost = 'http://t24.com';
+$cfg_basehost = 'http://t8.com';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'taspuPrWMfm0E4ahO7uRhv8Y8pdo1';
+$cfg_cookie_encode = 'Eb8AWxQDivLSUVgkovqyoQ1EgpWq';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
-$cfg_indexname = 'Home';
+$cfg_indexname = '主页';
 $cfg_webname = '晶品服饰';
 $cfg_adminemail = 'admin@dedecms.com';
 $cfg_html_editor = 'ckeditor';
@@ -28,7 +28,7 @@ $cfg_fck_xhtml = 'N';
 $cfg_df_style = 'default';
 $cfg_multi_site = 'N';
 $cfg_dede_log = 'N';
-$cfg_powerby = 'Copyright Notice © 1999-2014 Alibaba.com Hong Kong Limited and licensors. All rights reserved.';
+$cfg_powerby = 'Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有';
 $cfg_arcsptitle = 'N';
 $cfg_arcautosp = 'N';
 $cfg_arcautosp_size = 5;
@@ -58,7 +58,7 @@ $cfg_tplcache_dir = '/data/tplcache';
 $cfg_makesign_cache = 'N';
 $cfg_rm_remote = 'Y';
 $cfg_arc_dellink = 'N';
-$cfg_arc_autopic = 'N';
+$cfg_arc_autopic = 'Y';
 $cfg_arc_autokeyword = 'Y';
 $cfg_title_maxlen = 60;
 $cfg_album_width = 800;
@@ -154,11 +154,4 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
-$cfg_add = 'NO: 409-10th, Haizhu Ind. Park, Haizhu Dist-510288, Guangzhou, China';
-$cfg_tel = '+86 18718397377  (Peter)<br/>
-+86 15817078387  (Daniel)<br/>';
-$cfg_email = 'info@jpstrass.com<br/>
-danielyang@jpstrass.com<br/>
-karenwang@jpstrass.com<br/>
-alicelai@jpstrass.com<br/>';
 ?>
