@@ -1,0 +1,1 @@
+INSERT INTO `jp_admin` VALUES('1','10','admin','4ce7f8d3ee6b25253204','admin','','','','1416987865','127.0.0.1');

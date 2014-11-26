@@ -466,11 +466,11 @@
 }
 .product_detail .img_wrap .wrap .o_hidden{
 	height: 400px;
-	width: 400px;
+	/*width: 400px;*/
 }
 .product_detail .img_wrap .wrap .img{
-	height: 400px;
-	width: 400px;
+	min-width: 400px;
+	max-width: 400px;
 }
 
 .product_detail .img_wrap .wrap .img:hover{

@@ -1,0 +1,1 @@
+INSERT INTO `jp_diyform1` VALUES('1','0','dksfj','dsgk','sdkf','jsdf');

@@ -1,11 +1,11 @@
 <?php
-$cfg_basehost = 'http://t8.com';
+$cfg_basehost = 'http://t24.com';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'Eb8AWxQDivLSUVgkovqyoQ1EgpWq';
+$cfg_cookie_encode = 'IXw1YbkulqkMWMPklqKUMqW7Ndwtq';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
-$cfg_webname = '晶品服饰';
+$cfg_webname = '我的网站';
 $cfg_adminemail = 'admin@dedecms.com';
 $cfg_html_editor = 'ckeditor';
 $cfg_arcdir = '/a';

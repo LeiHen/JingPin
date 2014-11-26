@@ -40,26 +40,10 @@
        
        
         <!-- banner[[ -->
-        <div class="banner ext_banner_h180">
-           <div class="warp">
-                <a class="btn_l" rel="prev" ><span class="icon_arrows_l"></span></a>
-                <a class="btn_r" rel="next" ><span class="icon_arrows_r"></span></a>
-                <ul class="imgs">
-                    <li class="list"><a><img src="images/banner/index/img_001_1920x600.jpg" alt="" class="img"></a></li>
-                    <li class="list"><a><img src="images/banner/index/img_002_1920x600.jpg" alt="" class="img"></a></li>
-                    <li class="list"><a><img src="images/banner/index/img_003_1920x600.jpg" alt="" class="img"></a></li>
-                    <li class="list"><a><img src="images/banner/index/img_004_1920x600.jpg" alt="" class="img"></a></li>
-                </ul>
-            </div>
-            <ul class="nav">
-                <li class="li"><a class="circle hover"></a></li>
-                <li class="li"><a class="circle"></a></li>
-                <li class="li"><a class="circle"></a></li>
-                <li class="li"><a class="circle"></a></li>
-            </ul>
-<!--            <div class="arrow"></div>-->
+        <div class="banner_sub">
+            <div class="wrap"><img src="images/banner/other/about_1920x240.jpg" alt="" class="img"></div>
         </div>
-		<!-- banner]] -->
+        <!-- banner]] -->
        
        <div class="mian_content mob_title product_detail ">
         <!-- breadcroumd[[ -->
@@ -73,7 +57,7 @@
         <!-- Product[[ -->
         <h1 class="title">detail</h1>
         <div class="content">
-            <div class="img_wrap">
+            <div class="img_wrap" id="productIMG">
                 <div class="wrap">
                    <div class="o_hidden"><img src="images/product/img_001_01_400x400.jpg" alt="" class="img"></div>
                 </div>
@@ -84,7 +68,6 @@
                         <li class="list"><img src="images/product/img_001_03_400x400.jpg" alt="" class="img"></li>
                         <li class="list"><img src="images/product/img_001_04_400x400.jpg" alt="" class="img"></li>
                     </ul>
-<!--                    a-->
                 </div>
             </div>
             <div class="info_wrap">
@@ -218,6 +201,9 @@
 			function init(){
                 //返回顶部
                 toTop();
+                
+                //产品切换
+                photoSwitc('productIMG');
 			}
 			init();
 		</script>

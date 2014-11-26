@@ -393,13 +393,13 @@ body,
 	width: 400%;
 	left: 0;
 	height: 600px;
-
 }
 .banner .imgs .list{
 	float: left;
 	position: relative;
 	width: 25%;
 	height: 600px;
+	overflow: hidden;
 }
 .banner .imgs .list a{
 	display: block;
@@ -410,8 +410,14 @@ body,
 .banner .imgs .list a .img{
 	position: relative;
 	display: block;
-	margin-left:-50%; 
+	margin-left:-50%;
 }
+/*.banner .imgs .list:first-child{
+	z-index: 1;
+}*/
+
+
+
 .banner .nav{
 
 }

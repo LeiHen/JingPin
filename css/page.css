@@ -98,6 +98,10 @@
 
 .index_block_02 .roll_banner li .img{
 	width: 200px;
+	height: 126px;
+
+	max-width:200px;
+	max-height: 126px;
 }
 .index_block_02 .roll_banner li .name{
 	/*width: 200px;*/

@@ -1,1 +1,0 @@
-INSERT INTO `jp_addonproduct` VALUES('2','4','','','127.0.0.1','');
