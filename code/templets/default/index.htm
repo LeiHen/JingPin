@@ -130,10 +130,10 @@
         <div class="mod_block index_block_03">
             <h1 class="title">{dede:type typeid="3"}[field:typename/]{/dede:type}</h1> 
             <div class="wrap fl">
-            {dede:arclist typeid="3" row="1"}
-                <h2 class="sub_title">[field:title/]</h2>
+            {dede:arclist typeid="3" row="1" addfields='body' channelid='1'}
+                <h2 class="sub_title"><a href="[field:arcurl/]" target="_blink">[field:title/]</a></h2>
                 <div class="info">
-                    [field:body/]
+                   [field:body function='cn_substr(html2text(@me),600)'/]...
                 </div>
             {/dede:arclist}
             </div>
