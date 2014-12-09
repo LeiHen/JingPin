@@ -68,6 +68,7 @@
 
 .index_block_02 .wrap{
 	width: 1200px;
+	height: 170px;
 	margin: 80px auto 90px auto;
 	text-align: center;
 	overflow: hidden;
@@ -82,13 +83,14 @@
 	/*display: inline-block;
 	+display: inline;
 	+zoom: 1;*/
+	max-width: 200px;
 	float: left;
 	margin: 0 0 0 25px;
 	overflow: hidden;
 }
 
 .index_block_02 .roll_banner li a{
-	
+	display: block;
 }
 
 
@@ -98,6 +100,7 @@
 
 .index_block_02 .roll_banner li .img_wrap{
 	width: 200px;
+<<<<<<< HEAD
     height: 126px;
     overflow: hidden;
 }
@@ -110,11 +113,19 @@
 	-ms-transform: scale(1.04);
 	-o-transform: scale(1.04);
 	transform: scale(1.04);
+=======
+	height: 126px;
+
+	max-width:200px;
+	max-height: 126px;
+>>>>>>> origin/master
 }
 .index_block_02 .roll_banner li .name{
 	/*width: 200px;*/
-	font-size: 2em;
+	font-size: 1.6em;
 	line-height: 2em;
+	width: 200px;
+	/*overflow: hidden*/
 	text-transform: capitalize;
 }
 
@@ -384,6 +395,9 @@
 }
 .news_detail p{
 	text-indent: 2em;
+}
+.news .txt img{
+	max-width: 800px;
 }
 
 

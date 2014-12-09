@@ -55,7 +55,7 @@
             <li class="list">
                
                <div class="txt_wrap">
-                   <p class="info">[field:description/]</p>
+                   <p class="info">[field:description function='Html2text(cn_substr(@me,200))/]</p>
                    <a href="[field:arcurl/]" class="btn ext_btn_capital" target="_blink" title="点击查看">
                         more
                         <span class="line_t"></span>
@@ -67,7 +67,7 @@
                
                <div class="img_wrap">
                    <img src="[field:picname/]" class="img" alt="[field:title/]" title="[field:title/]">
-                   <h2 class="name">[field:title/]</h2>
+                   <h2 class="name" title="[field:title/]">[field:title function='Html2text(cn_substr(@me,38))/]</h2>
                    <span class="type">strass</span>
                </div>
             </li>
@@ -123,7 +123,7 @@
 
 <script>
     function init_present(){
-		(function(){
+		    (function(){
           $('#product .list:odd').css("margin-right",'0');
         })();      
     }
