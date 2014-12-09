@@ -95,6 +95,14 @@
 .index_block_02 .roll_banner li:first-child{
 	margin: 0;
 }
+.index_block_02 .roll_banner li a:hover .img{
+	-webkit-transform:scale(1.04);
+	-moz-transform:scale(1.04);
+	-ms-transform:scale(1.04);
+	-o-transform:scale(1.04);
+	transform:scale(1.04);
+}
+
 
 .index_block_02 .roll_banner li .img{
 	width: 200px;
@@ -699,6 +707,7 @@
 .index_block_02 .wrap .btn_r,
 .index_block_02 .wrap .btn_l span,
 .index_block_02 .wrap .btn_r span,
+.index_block_02 .roll_banner li .img,
 .index_block_03 .ul,
 .index_block_03 .ul .list,
 .index_block_03 .ul .list a,
