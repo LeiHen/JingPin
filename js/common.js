@@ -234,6 +234,60 @@ function scrollImg(animateTime, time) {
 
 
 /**
+* @name     :navShow
+* @author   :Nice
+* @dependent:导航显示隐藏
+*/
+function navShow(ID){
+    $('#'+ID+' .ul .li').hover(function() {
+        $(this).children('.sub_nav').css('display','block');
+        
+        function eShow(e){
+            e.children('.sub_nav').animate({
+                top: 40,
+                opacity: 1
+            }, 400)
+        }
+
+        setTimeout(eShow($(this)),100)
+    }, function() {
+        $(this).children('.sub_nav').animate({
+            top: 0,
+            opacity: 0
+        }, 400)
+
+        function eHidden(e){
+            // setTimeout(function x(e){e.children('.sub_nav').css('display','none');},1000)
+            e.children('.sub_nav').css('display','none');
+            console.log(e);
+        }
+
+
+        setTimeout(eHidden($(this)),4000)
+    });
+}
+/* @end **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
  * @name		:
  * @author	:si
  * @version	:

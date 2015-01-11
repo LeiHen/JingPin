@@ -27,6 +27,22 @@ function  photoSwitc(ID){
 
 
 
+/**
+* @name		:mainInit
+* @author	:Nice
+* @dependent:初始化 统一入口
+*/
+function mainInit(){
+	navShow("mianNav");
+}
+mainInit();
+/* @end **/
+
+
+
+
+
+
 
 
 
